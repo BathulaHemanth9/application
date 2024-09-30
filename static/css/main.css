@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#heading{
+    background-color: blue;
+    color: white;
+    border: none;
+    text-align: center;
+    height: 70px;
+    border-radius: 1px;
+}
+#main{
+    text-align: center;
+    margin-top: 10px;
+    font-size: large;
+}

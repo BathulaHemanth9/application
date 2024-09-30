@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block main %}
+            <form action="" method="post" >
+                {% csrf_token %}
+                <label for="" >
+                    Enter value:
+                    <input type="text" class="main" name="t1">
+                </label><br><br>
+                <input type="submit" value="create" id="submit">
+            </form>
+{% endblock %}
+        

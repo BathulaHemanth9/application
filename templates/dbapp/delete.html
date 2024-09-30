@@ -1,0 +1,10 @@
+{% extends 'vcube/base.html' %}
+
+{% block main %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <p>Do You want to delete {{emdata.empname}} ?</p>
+    <p>Please Confirm</p>
+    <input type="submit" value="Confirm">
+</form>
+{% endblock %}

@@ -1,0 +1,26 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#heading{
+    background-color: blue;
+    color: white;
+    border: none;
+    text-align: center;
+    height: 80px;
+    border-radius: 10px;
+}
+.main{
+    text-align: center;
+    font-size: 30px;
+    height: 30px;
+}
+#submit{
+    width: 200px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+}

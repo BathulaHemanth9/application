@@ -1,0 +1,19 @@
+{% extends 'vcube/base.html' %}
+
+{% block main %}
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="">
+        UserName:
+        <input type="text" name="uname">
+    </label><br><br>
+    <label for="">
+        Password:
+        <input type="text" name="pwd">
+    </label><br><br>
+    <input type="submit" value="Login">
+    <a href="http://127.0.0.1:8000/form/signup/">Signup</a>
+
+</form>
+
+{% endblock %}

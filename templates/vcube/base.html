@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}"> 
+    </head>
+    <body>
+        <div id="heading" style="height: 80px;">
+            <h1>Simple Calculator</h1>
+            {% if request.user.is_authenticated %}
+                <div id="logout" style="text-align: right;">
+                    <p>Hi 
+                        {{request.user.username}}</p>
+                <a href="{% url 'logouturl' %}" style="text-align: none;color: white;">Logout</a>
+                </div>
+            {% endif %}
+        
+        </div>
+        <div id="main">
+            {% block main %}
+                <h1>Replace block</h1>
+            {% endblock %}
+        </div>
+        <script src="{% static 'javascipt/validation.js'%}"></script>
+    </body>
+</html>
